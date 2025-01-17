@@ -1,0 +1,307 @@
+header {
+    position: absolute;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.btn-menu {
+    background-color: #ffffff00;
+    border: none;
+}
+
+.btn-menu:hover {
+    cursor: pointer;
+}
+
+#sidebar {
+    z-index: 3;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffffd2;
+
+}
+
+.sidebar-nav {
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav-close {
+    margin-left: auto;
+    margin-top: 20px;
+    width: 29px;
+}
+
+.sidebar-nav-link {
+    padding: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-nav-link {
+    list-style: url('../assets//icons/Ellipse\ 2.png');
+}
+
+.sidebar-nav-link li a {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+}
+
+.sidebar-nav-social {
+    align-self: center;
+    justify-self: end;
+    margin-top: auto;
+}
+
+main {
+    padding: 10px;
+    width: 100%;
+    height: 83vh;
+    background-image: url('../assets/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-title {
+    font-size: 3.5rem;
+}
+
+.main-content {
+    padding-top: 150px !important;
+}
+
+.main-links {
+    margin: 30px 0;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.main-social {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: rotateZ(-90deg);
+}
+
+.main-social-text {
+    font-weight: 600;
+}
+
+.main-social-line {
+    width: 60px;
+    height: 3px;
+    background-color: black;
+}
+
+.expirience-header {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.expirience--inner {
+    margin: 80px 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13%; 
+}
+
+ul {
+    position: relative;
+    width: 420px;
+    list-style-type: none;
+    margin: 20px 0;
+    display: flex;
+    gap: 50px;
+}
+
+.ul-line {
+    position: relative;
+    height: 95%;
+    width: 1px;
+    background-color: black;
+}
+
+.ul-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    transform: translate(-10px, 0);
+    background-color: orange;
+}
+
+.li {
+    margin: 25px -5px;
+}
+
+.li-header {
+    padding: 10px;
+    gap: 3%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.li-header::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 9%;
+    height: 1px;
+    background-color: black;
+}
+
+.li-header-img {
+    position: relative;
+}
+
+.li-header-title {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.li-header-description {
+    margin: 5px 0;
+    font-size: 0.85rem;
+}
+
+footer {
+    margin: 100px auto !important;
+    padding: 10px;
+}
+
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;  
+}
+
+.footer-form--inner {
+    width: 650px;
+}
+
+.footer-form-social-links {
+    display: flex;
+    gap: 30px;
+}
+
+form {
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+input, textarea {
+    margin: 5px;
+    padding: 10px 15px;
+    width: 280px;
+}
+
+#message {
+    width: 585px;
+    height: 190px;
+    resize: none;
+    font-size: 14px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group-name {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+@media all and (max-width: 1500px) {
+
+    .main-social {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1150px) {
+
+    .footer-form-img {
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 950px) {
+
+    .sidebar-nav {
+        width: 300px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+}
+
+@media all and (max-width: 650px) {
+
+    form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-group {
+        margin: 0 auto;
+    }
+
+    input, #message {
+        width: 300px;
+        height: 40px;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+
+    input, #message {
+        width: 90vw;
+    }
+}

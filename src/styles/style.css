@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 100px auto !important;
+    padding: 10px !important;
+}
+
+.btn {
+    padding: 13px;
+    background-color: orange;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0 0 5px 1px #606060;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.circle {
+    z-index: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 100px;
+}
+
+.decription-circle {
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -5px);
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 100px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: orange;
+}
+
+.underline-center {
+    margin: 0 auto;
+    width: 60px;
+    height: 4px;
+    background-color: orange;
+}
+
+.title {
+    position: relative;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.description {
+    position: relative;
+    font-size: 1.15rem;
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+}
