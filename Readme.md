@@ -2,7 +2,7 @@
 
 
 ```js
-git clone
+git clone https://github.com/lleha583/task.git
 ```
 
 ```js
